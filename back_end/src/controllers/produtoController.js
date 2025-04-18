@@ -63,7 +63,7 @@ const createProduto = async (req, res) => {
   }
 };
 
-const updateProduct = async (req, res) => {
+const updateProduto = async (req, res) => {
   try {
     const { id } = req.params;
     const { nome, descricao, preco, quantidade } = req.body;
@@ -118,6 +118,6 @@ module.exports = {
   getAllProdutos,
   getProdutoById,
   createProduto,
-  updateProduct,
+  updateProduto,
   deleteProduto,
 };
